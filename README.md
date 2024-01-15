@@ -30,6 +30,7 @@ Install the required the packages inside the virtual environment:
 $ conda create -n yourenvname python=3.7 anaconda
 $ source activate yourenvname
 $ conda install cudatoolkit==10.0.130
+conda install cudnn=7.6.0=cuda10.0_0
 $ pip install -r requirements.txt
 ```
 ### Installation for envs 
