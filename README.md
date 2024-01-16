@@ -50,6 +50,12 @@ Take cartpole with gravity of 5 as an example.
 cd ../../
 python data/data_gen_cartpoleworld.py 'v00' 
 ```
+or
+```
+xvfb-run --auto-servernum --server-num=1 python data/data_gen_cartpoleworld.py 'v00' 
+```
+when there is no active displayer.
+
 ##### Atari Pong
 Install ```gym_pong```.
   ```
