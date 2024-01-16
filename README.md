@@ -72,6 +72,12 @@ Take the domain in size of 2.0 as an example
 cd ../../
 python data/data_gen_pong.py -name 'Pongm' -v v00
 ```
+or
+```
+xvfb-run --auto-servernum --server-num=1 python data/data_gen_pong.py -name 'Pongm' -v v00
+```
+when there is no active displayer.
+
 For the reward-varying cases
 ```
 python data/data_gen_pong.py -name 'Pong' -v v0 -rewardm 'linear' -k1 0.1
