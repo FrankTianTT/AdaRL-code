@@ -9,8 +9,6 @@ warnings.filterwarnings('ignore')
 import gym
 import gym_cartpole_world
 
-from models.dqn_gen import DoubleDQNAgent
-
 
 SCREEN_X = 64
 SCREEN_Y = 64
@@ -44,8 +42,6 @@ if not os.path.exists(dataset_name):
 
 if not os.path.exists(os.path.join(dataset_name, cartpole_version)):
     os.makedirs(os.path.join(dataset_name, cartpole_version))
-
-agent = DoubleDQNAgent(state_size, action_size)
 
 env = gym.wrappers.Monitor(env, "save_demo", video_callable=False, force=True, write_upon_reset=False)
 
